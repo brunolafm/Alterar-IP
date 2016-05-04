@@ -1,10 +1,10 @@
 @echo off
-REM Seta os parâmetros para executar diretamente pelo terminal
+REM Seta os parametros para executar diretamente pelo terminal
 if "%1"=="dhcp" (goto dhcp)
 if "%2"=="casa" (goto casa)
 if "%3"=="pref" (goto prefeitura)
 
-REM Título
+REM Titulo
 cls
 echo.
 echo Alterar IP
@@ -29,7 +29,7 @@ runas /savecred /user:Administrator "netsh interface ip set address name= Wi-Fi 
 runas /savecred /user:Administrator "netsh interface ip set dnsservers name=Wi-Fi dhcp"
 goto sair
 
-REM Menu Estático
+REM Menu Estatico
 :estatico
 cls
 echo.
@@ -42,7 +42,7 @@ set /p choose=Selecione uma opcao:
 if %choose%==1 goto casa
 if %choose%==2 goto prefeitura
 
-REM Configurações de Casa
+REM Configuracoes de Casa
 :casa
 cls
 runas /savecred /user:Administrator "netsh interface ip set address name= Wi-Fi static 192.168.0.200 255.255.255.0 192.168.0.1"
@@ -50,7 +50,7 @@ runas /savecred /user:Administrator "netsh interface ip add dns name=Wi-Fi 200.1
 runas /savecred /user:Administrator "netsh interface ip add dns name=Wi-Fi 189.38.95.95 index=2"
 goto sair
 
-REM Configurações da Prefeitura
+REM Configuracoes da Prefeitura
 :prefeitura
 cls
 runas /savecred /user:Administrator "netsh interface ip set address name= Wi-Fi static 10.0.0.101 255.255.255.0 10.0.0.1"
