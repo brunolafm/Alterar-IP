@@ -1,8 +1,8 @@
 @echo off
 REM Seta os parametros para executar diretamente pelo terminal
 if "%1"=="dhcp" (goto dhcp)
-if "%2"=="casa" (goto casa)
-if "%3"=="pref" (goto prefeitura)
+if "%1"=="casa" (goto casa)
+if "%1"=="pref" (goto prefeitura)
 
 REM Titulo
 cls
