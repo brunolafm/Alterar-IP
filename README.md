@@ -5,7 +5,7 @@ Script .bat para alterar o IP do Windows, com definições de IP por local onde 
 
 Para que o código funcione, é necessário alterar o nome do usuário citado nos comandos:
 
-`runas /savecred /user:`
+`"runas /savecred /user:"`
 
 **Para PT-BR use:**
 
