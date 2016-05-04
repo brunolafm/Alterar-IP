@@ -1,4 +1,4 @@
-### Alterar-IP
+#Alterar-IP
 Script .bat para alterar o IP do Windows, com definições de IP por local onde é necessário.
 
 ##Código
