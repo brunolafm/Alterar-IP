@@ -1,7 +1,7 @@
-# Alterar-IP
+### Alterar-IP
 Script .bat para alterar o IP do Windows, com definições de IP por local onde é necessário.
 
-###Código
+##Código
 
 Para que o código funcione, é necessário alterar o nome do usuário citado nos comandos:
 
@@ -15,13 +15,13 @@ Para que o código funcione, é necessário alterar o nome do usuário citado no
 
 `runas /savecred /user:Administrator`
 
-###Path
+##Path
 
 É necessário adicionar a pasta em que o arquivo se encontra ao Path, pode ser adicionado pelo comando:
 
 `SETX PATH "%PATH%;C:\PASTA-DO-ARQUIVO" -m`
 
-###Usuário
+##Usuário
 
 É necessário estar com o usuário Administrador ativo e protegido por senha, pode ser feito pelo comando:
 
